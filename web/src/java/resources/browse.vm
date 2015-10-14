@@ -1,0 +1,4 @@
+#parse("/resources/header.vm")
+#foreach( $UserDetails in $UserDetailsCollection )
+$UserDetails.UserName
+#end
