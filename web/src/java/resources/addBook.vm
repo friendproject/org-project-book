@@ -1,0 +1,35 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+        <title>Book Addition</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <script src="/js/bootstrap.min.js"></script>
+      </head>
+      <body>
+<div class="container">
+	<div class="row">
+		<form role="form" method="post" enctype="multipart/form-data" action='add'>
+			<div class="form-group">
+				<label for="title">Title</label>
+					<input type="text" class="form-control" id="userName"
+						placeholder="Enter Title" name="title">
+                <label for="printYear">Edition</label>
+					<input type="text" class="form-control" id="printYear"
+                        placeholder="Enter Edition" name="printYear">
+				<label for="author">Author</label>
+					<input type="text" class="form-control" id="author"
+                        placeholder="Enter Author" name="author">		
+				<label for="stream">Stream</label>
+					<input type="text" class="form-control" id="author"
+                        placeholder="Enter Stream" name="stream">
+  <span class="btn btn-file">Upload<input type="file" name="abc"/></span>
+            </div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+	</div>
+</div>
+</body>
+</html>

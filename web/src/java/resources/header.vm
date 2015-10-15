@@ -17,6 +17,3 @@ Logged in as $userDetails.getName() with Role as $userDetails.getRole()
 <div class="col-lg-6"><a href="/add">Add a book</a></div><div class="col-lg-6"><a href="/browse">Browse</a></div>
 </div></div>
 <a href="http://www.example.com" target="_blank" id="code" type="submit" class="btn btn-success" style="width:400px;"><span class="glyphicon glyphicon-download"></span> Generate Code</a>
-
-
-

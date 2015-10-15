@@ -1,9 +1,6 @@
 package com.test.velocity.core;
 
-import com.test.velocity.Handler.LoginPageCreater;
-import com.test.velocity.Handler.LoginRequestHandler;
-import com.test.velocity.Handler.RequestHandler;
-import com.test.velocity.Handler.WebServiceHandler;
+import com.test.velocity.Handler.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -28,7 +25,8 @@ public class RequestDelegator extends HttpServlet {
         handlerMap.put("/fonts", new WebContentHandler("fonts","/fonts/"));
         handlerMap.put("/js", new WebContentHandler("js","/js/"));
         handlerMap
-                .put("/favicon.ico",new WebContentHandler("/","/"));
+                .put("/favicon.ico", new WebContentHandler("/", "/"));
+        handlerMap.put("/addBook", new AddBookPageCreater());
     }
 
     public void doGet(HttpServletRequest request,
